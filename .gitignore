@@ -1,0 +1,5 @@
+/.claude/
+/.envrc.local
+/var/
+!/var/.gitignore
+/vendor/
