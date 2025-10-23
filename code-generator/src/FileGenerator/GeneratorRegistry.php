@@ -23,6 +23,14 @@ final readonly class GeneratorRegistry
         return new self(
             new ResourceFinderGenerator(),
             new ResourceFinderTestGenerator(),
+            new StringProcessorGenerator(),
+            new StringProcessorTestGenerator(),
+            new CalculatorGenerator(),
+            new CalculatorTestGenerator(),
+            new DataTransformerGenerator(),
+            new DataTransformerTestGenerator(),
+            new ValidatorGenerator(),
+            new ValidatorTestGenerator(),
         );
     }
 
