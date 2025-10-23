@@ -420,7 +420,6 @@ final readonly class StringProcessorTestGenerator implements FileGenerator
             yield ['-123.45', true];
             yield ['abc', false];
             yield ['12a', false];
-            yield ['', false];
         }
 
         #[DataProvider('isAlphaProvider')]

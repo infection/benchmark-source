@@ -208,7 +208,7 @@ final readonly class CalculatorTestGenerator implements FileGenerator
         public static function roundProvider(): iterable
         {
             yield [3.14159, 2, 3.14];
-            yield [2.5, 0, 2.0];
+            yield [2.5, 0, 3.0];
             yield [1.678, 1, 1.7];
             yield [5.0, 0, 5.0];
         }

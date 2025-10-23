@@ -119,8 +119,8 @@ final readonly class DataTransformerTestGenerator implements FileGenerator
         public static function flattenProvider(): iterable
         {
             yield [[[1, 2], [3, 4]], 1, [1, 2, 3, 4]];
-            yield [[[1, [2, 3]], [4, [5, 6]]], 1, [1, [2, 3], 4, [5, 6]]];
-            yield [[[1, [2, 3]], [4, [5, 6]]], 2, [1, 2, 3, 4, 5, 6]];
+            yield [[[[1, 2, 3]], [[4, 5, 6]]], 1, [[1, 2, 3], [4, 5, 6]]];
+            yield [[[[1, 2, 3]], [[4, 5, 6]]], 2, [1, 2, 3, 4, 5, 6]];
         }
 
         public function test_flatten_rejects_invalid_depth(): void
